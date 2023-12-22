@@ -253,6 +253,56 @@ main {
   font-size: 25px;
   color: #f948b2;
 }
+/* play-instant */
+.play-instant {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 230px;
+  padding: 100px 0;
+}
+.instant-img {
+  position: relative;
+}
+.instant-img .hourse {
+  width: 90%;
+}
+.instant-img .cat {
+  position: absolute;
+  bottom: -82px;
+  left: -77px;
+  width: 30%;
+}
+
+.instant-content {
+  text-align: right;
+}
+.instant-content h1 {
+  color: #0b0223;
+  font-family: Work Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+}
+.instant-content h1 span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+}
+.instant-content p {
+  color: #534c64;
+  text-align: right;
+  font-family: Work Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  max-width: 353px;
+  margin-left: auto;
+}
 /* responsive style */
 /* mobile or small device responsive */
 @media screen and (max-width: 576px) {
@@ -335,6 +385,44 @@ main {
     justify-content: center;
     row-gap: 10px;
   }
+  /* play-instant */
+  .play-instant {
+    flex-direction: column;
+
+    justify-content: center;
+    row-gap: 30px;
+    padding: 50px 0;
+  }
+  .instant-content {
+    text-align: center;
+  }
+  .instant-content p {
+    color: #534c64;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+    max-width: 353px;
+    margin: 0 auto;
+  }
+  .instant-img .hourse {
+    width: 100%;
+  }
+  .instant-content h1 {
+    font-size: 40px;
+    line-height: 42px;
+  }
+  .instant-content p {
+    font-size: 17px;
+    line-height: 24px;
+  }
+  .instant-img .cat {
+    bottom: -27px;
+    left: -34px;
+    width: 19%;
+  }
 }
 
 /* tablet or medium device responsive */
@@ -381,5 +469,21 @@ main {
   .gamer-section h2 span {
     font-size: 19px;
     line-height: 24px;
+  }
+  .instant-content h1 {
+    font-size: 37px;
+    line-height: 48px;
+  }
+  .play-instant {
+    column-gap: 53px;
+    padding: 68px 0;
+  }
+  .instant-content p {
+    line-height: 25px;
+  }
+  .instant-img .cat {
+    bottom: -57px;
+    left: -45px;
+    width: 30%;
   }
 }
